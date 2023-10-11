@@ -6,43 +6,45 @@
     <title>Teste de imagem de fundo</title>
     <style>
         body {
-            background-image: url(imagens/wallpaper003.jpg);
-            background-repeat: no-repeat;
-            height: 98vh;
-            background-position: center center;
+           
+            background: black url(imagens/wallpaper003.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
-        div.quadrado {
-            border: 2px solid black;
-            display: inline-block;
-            width: 300px;
-            height: 300px;
-            border-radius: 10px;
-            background-color: rgba(128, 128, 128, 0.604);
-        }
+        div.alinhar {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
 
-        div#q1 {
-            background-color: blueviolet;
+        }
+        main {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            text-align: justify;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
             
-        
         }
-        div#q2 {
-            background-image: linear-gradient(to bottom, rgb(231, 58, 58), rgb(76, 76, 211));
+        main h1 {
+            text-align: center;
+            color: blue;
         }
-        div#q3 {
-            background-image: url(imagens/pattern003.png);
-        }
+       
 
     </style>
 </head>
 <body>
-    <div class="quadrado" id="q1">
 
-    </div>
-    <div class="quadrado" id="q2">
+   <div class="alinhar">
+       <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam labore ex qui ipsum! Veritatis illum, ab, optio neque cupiditate debitis molestiae consequatur enim ipsam, quas ratione voluptate fugit ut corrupti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia qui natus sit nobis laboriosam cum animi harum deleniti voluptatum, voluptatibus distinctio beatae facilis est. Consectetur ipsum repudiandae distinctio veritatis quibusdam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, optio. Sunt velit hic reiciendis impedit quasi. Cupiditate fugiat aliquam unde officia, eaque dicta inventore? Illum placeat iure minus officiis commodi.</p>
+       </main>
+   </div>
 
-    </div>
-    <div class="quadrado" id="q3">
-
-    </div>
 </body>
 </html>
